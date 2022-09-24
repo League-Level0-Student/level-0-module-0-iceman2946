@@ -26,7 +26,7 @@ public class RobotSquare {
     	//        The start value will be zero because no sides have yet been drawn. Use this code:
 		  /**     int count = 0;    **/
     	int count = 0;
-    	while( count < 4 ); {
+    	while( count < 4 ) {
 
         // DRAW.  Draw a line. Use this command:
     		  /**     rob.move(<distance>);    **/ 

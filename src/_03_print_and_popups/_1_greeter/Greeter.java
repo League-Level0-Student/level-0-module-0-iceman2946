@@ -6,7 +6,7 @@ public class Greeter {
 public static void main(String[] args) {
 	System.out.println("Hello World!");
 	String imput=JOptionPane.showInputDialog("What is your name?");
-	JOptionPane.showMessageDialog(null,"Hello "+imput);
+	JOptionPane.showMessageDialog(null, "Hello " + imput );
 
 }
 }

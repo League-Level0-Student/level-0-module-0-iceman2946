@@ -37,14 +37,14 @@ public class DragonFight {
 				// or a kick
 				String input=JOptionPane.showInputDialog("Do you want to attack the dragon with a yell or a kick?");
 				// 4. If they typed in "yell":
-				if(input=="yell") {
+				if(input.equals("yell")) {
 					playerAttack=ran.nextInt(10);
 				}
 					  // -- Find a random number between 0 and 10 and store it in playerAttack. Use
 					  // ran.nextInt(10)
 			
 				// 5. If they typed in "kick":
-				if (input=="kick") {
+				if (input.equals("kick")) {
 					playerAttack=ran.nextInt(25);
 				}
 					  // -- Find a random number between 0 and 25 and store it in playerAttack.
@@ -77,14 +77,14 @@ public class DragonFight {
 			
 			// (Bonus: Also display the amount of health that was lost by each in this
 			// round)
-				JOptionPane.showMessageDialog(null,"Player Health Lost:" + dragonAttack + "\n" + "Dragon Health Lost:" + dragonHealth);
+				JOptionPane.showMessageDialog(null,"Player Health Lost:" + dragonAttack + "\n" + "Dragon Health Lost:" + playerAttack);
 
 
 		} // this is the end of the while loop
 
 	}
 
-	static boolean playerLost() {
+	static void playerLost() {
 		// 11. Tell the player that they have been defeated by the dragon and have no treasure
 		JOptionPane.showMessageDialog(null, "You have been defeated by the dragon and you have no treasure.");
 
@@ -97,4 +97,5 @@ public class DragonFight {
 		System.exit(0);   //This code ends the program
 	}
 
+	
 }
